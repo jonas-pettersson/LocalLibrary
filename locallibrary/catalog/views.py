@@ -36,3 +36,13 @@ class BookListView(ListView):
 class BookDetailView(DetailView):
     model = Book
     template_name = "book_detail.html"
+
+
+class AuthorListView(ListView):
+    model = Author
+    template_name = "author_list.html"
+
+
+class AuthorDetailView(DetailView):
+    model = Author
+    template_name = "author_detail.html"
