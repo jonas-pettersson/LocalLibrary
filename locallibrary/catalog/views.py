@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
 from .models import Author, Book, BookInstance, Genre
 
@@ -24,3 +25,14 @@ def catalog(request):
     }
 
     return render(request, 'catalog.html', context=context)
+
+
+class BookListView(ListView):
+    model = Book
+    template_name = "book_list.html"
+    paginate_by = 5
+
+
+class BookDetailView(DetailView):
+    model = Book
+    template_name = "book_detail.html"
