@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Author List</h1>
+
+<div class="w3-container w3-khaki">
+    <h1>Author List</h1>
+</div>
+
 {% if author_list %}
-    <ul>
+    <ul class="w3-ul w3-border">
         {% for author in author_list %}
             <li>
                 <a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }} </a>

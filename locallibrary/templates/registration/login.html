@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+
+    {% if next %}
+        {% if user.is_authentiated %}
+            <p>Your account doesn't have access to this page. To proceed,
+      please login with an account that has access.</p>
+        {% else %}
+            <p>Please login to this page.</p>        
+        {% endif %}
+    {% endif %}
+
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+        <form method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+            <h2>Log In</h2>
+            <ul class="w3-ul">
+                <li>
+                    <label for="username">{{ form.username.label_tag }}</label>
+                    <input class="w3-input" type="text" id="username" name="username">
+                </li>
+                <li>
+                    <label for="password">{{ form.password.label_tag }}</label>
+                    <input class="w3-input" type="text" id="password" name="password">
+                </li>
+                <li><label for=""></label><input type="text"></li>
+            </ul>
+            </fieldset>
+
+        </form>
+    </div>
+
+{% endblock content %}
