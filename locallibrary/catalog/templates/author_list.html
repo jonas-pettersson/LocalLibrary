@@ -7,7 +7,7 @@
 </div>
 
 {% if author_list %}
-    <ul class="w3-ul w3-border">
+    <ul class="w3-ul w3-border w3-hoverable">
         {% for author in author_list %}
             <li>
                 <a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }} </a>
