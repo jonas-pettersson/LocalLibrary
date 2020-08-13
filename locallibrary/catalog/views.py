@@ -17,11 +17,16 @@ def catalog(request):
 
     number_of_authors = Author.objects.count()
 
+    # Number of visits to this view, as counted in the session variable.
+    number_of_visits = request.session.get('number_of_visits', 1)
+    request.session['number_of_visits'] = number_of_visits + 1
+
     context = {
         'number_of_books': number_of_books,
         'number_of_instances': number_of_instances,
         'number_of_available_instances': number_of_available_instances,
         'number_of_authors': number_of_authors,
+        'number_of_visits': number_of_visits,
     }
 
     return render(request, 'catalog.html', context=context)
