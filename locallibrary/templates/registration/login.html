@@ -2,23 +2,30 @@
 
 {% block content %}
 
-    {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-
-    {% if next %}
-        {% if user.is_authentiated %}
-            <p>Your account doesn't have access to this page. To proceed,
-      please login with an account that has access.</p>
-        {% else %}
-            <p>Please login to this page.</p>        
-        {% endif %}
-    {% endif %}
-
     <div class="w3-container w3-white w3-margin w3-padding-large">
+
+        {% if form.errors %}
+            <div class="w3-panel w3-red">
+                <p>Your username and password didn't match. Please try again.</p>
+            </div>
+        {% endif %}
+
+        {% if next %}
+            {% if user.is_authentiated %}
+                <div class="w3-panel w3-red">
+                    <p>Your account doesn't have access to this page. To proceed,
+            please login with an account that has access.</p>
+                </div>
+            {% else %}
+                <div class="w3-panel w3-yellow">
+                    <p>Please login to this page.</p> 
+                </div>       
+            {% endif %}
+        {% endif %}
+
         <form method="post">
             {% csrf_token %}
-            <fieldset class="form-group">
+            <fieldset class="form-grou w3-container w3-card-4 w3-light-grey">
             <h2>Log In</h2>
             <ul class="w3-ul">
                 <li>
@@ -27,12 +34,13 @@
                 </li>
                 <li>
                     <label for="password">{{ form.password.label_tag }}</label>
-                    <input class="w3-input" type="text" id="password" name="password">
+                    <input class="w3-input" type="password" id="password" name="password">
                 </li>
-                <li><label for=""></label><input type="text"></li>
+                <li class="w3-button">
+                    <button type="submit">Login</button>
+                </li>
             </ul>
             </fieldset>
-
         </form>
     </div>
 
