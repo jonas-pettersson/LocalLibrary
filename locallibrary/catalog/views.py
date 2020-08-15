@@ -35,7 +35,7 @@ def catalog(request):
 class BookListView(ListView):
     model = Book
     template_name = "book_list.html"
-    paginate_by = 5
+    paginate_by = 10
 
 
 class BookDetailView(DetailView):
