@@ -35,6 +35,17 @@
     </nav>
     
     <main class="w3-container">
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="w3-panel {% if message.tags == 'info' %}w3-blue
+                {% elif message.tags == 'success' %}w3-green
+                {% elif message.tags == 'warning' %}w3-yellow
+                {% else %}w3-red{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
  
         {% block content %}
         {% endblock content %}
