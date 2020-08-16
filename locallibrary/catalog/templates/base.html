@@ -27,6 +27,9 @@
                 <a class="w3-bar-item w3-button" href="{% url 'catalog' %}">Home</a>
                 <a class="w3-bar-item w3-button" href="{% url 'books' %}">All books</a>
                 <a class="w3-bar-item w3-button" href="{% url 'authors' %}">All authors</a>
+                {% if user.is_staff %}
+                    <a class="w3-bar-item w3-button" href="{% url 'admin:index' %}">Admin</a>
+                {% endif %}
                 {% if user.is_authenticated %}
                     <a class="w3-bar-item w3-display-topmiddle">Welcome {{ user.get_username }}!</a>
                     <a class="w3-bar-item w3-button w3-right" href="{% url 'logout' %}?next={{request.path}}">Logout</a>
