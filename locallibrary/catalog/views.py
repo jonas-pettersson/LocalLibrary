@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView
 
 from .models import Author, Book, BookInstance, Genre
@@ -35,20 +36,29 @@ def catalog(request):
 
 class BookListView(ListView):
     model = Book
-    template_name = "book_list.html"
+    template_name = 'book_list.html'
     paginate_by = 10
 
 
 class BookDetailView(DetailView):
     model = Book
-    template_name = "book_detail.html"
+    template_name = 'book_detail.html'
 
 
 class AuthorListView(ListView):
     model = Author
-    template_name = "author_list.html"
+    template_name = 'author_list.html'
 
 
 class AuthorDetailView(DetailView):
     model = Author
-    template_name = "author_detail.html"
+    template_name = 'author_detail.html'
+
+
+class LoanedBooksCurrentUserListView(LoginRequiredMixin, ListView):
+    model = BookInstance
+    template_name = 'loaned_books_current_user_list.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        return BookInstance.objects.filter(borrower=self.request.user).filter(status__exact='o').order_by('due_back')
