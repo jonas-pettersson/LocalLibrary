@@ -7,17 +7,26 @@
 </div>
 <hr>
 <div class="w3-container">
-    <h4>List of books.</h4>
+    <h4>List of books</h4>
 </div>
 
 {% if bookinstance_list %}
-    <ul class="w3-ul w3-border">
-        {% for bookinst in bookinstance_list %}
-            <li class="{% if bookinst.is_overdue %}w3-text-red{% endif %}">
-                <a href="{% url 'book_detail' bookinst.book.pk %}">{{ bookinst.book.title }}</a> ({{ bookinst.book.author }}) [{{ bookinst.due_back }}]
-            </li>
+    <table class="w3-table-all w3-hoverable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Due Back</th>
+            </tr>
+        </thead>
+        {% for book in bookinstance_list %}
+            <tr class="{% if book.is_overdue %}w3-text-red{% endif %}">
+                <td><a href="{% url 'book_detail' book.book.pk %}">{{ book.book.title }}</a></td>
+                <td><a href="{% url 'book_detail' book.book.pk %}">{{ book.book.author }}</a></td>
+                <td><a href="{% url 'book_detail' book.book.pk %}">{{ book.due_back }}</a></td>
+            </tr>
         {% endfor %}
-    </ul>
+    </table>
 {% else %}
     <p>There are no books borrowed.</p>
 {% endif %}

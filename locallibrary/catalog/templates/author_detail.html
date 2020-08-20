@@ -8,13 +8,22 @@
 
     <div class="w3-container w3-margin">
         <h4>Books</h4>
-        {% for book in author.book_set.all %}
-            <ul class="w3-ul">
-                <li><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a></li>
-                <li>ISBN: {{ book.isbn }}</li>
-                <li>Genre: {{ book.genre.all|join:"," }}</li>
-            </ul>
-        {% endfor %}
+            <table class="w3-table-all w3-hoverable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>ISBN</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                {% for book in author.book_set.all %}
+                    <tr>
+                        <td><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a></td>
+                        <td><a href="{% url 'book_detail' book.pk %}">{{ book.isbn }}</a></td>
+                        <td><a href="{% url 'book_detail' book.pk %}">{{ book.genre.all|join:"," }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
     </div>
 
 {% endblock content %}

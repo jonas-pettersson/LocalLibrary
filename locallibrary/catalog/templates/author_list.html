@@ -7,18 +7,24 @@
 </div>
 <hr>
 <div class="w3-container">
-    <h4>List of authors.</h4>
+    <h4>List of authors</h4>
 </div>
 
 {% if author_list %}
-    <ul class="w3-ul w3-border w3-hoverable">
+    <table class="w3-table-all w3-hoverable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Lived</th>
+            </tr>
+        </thead>
         {% for author in author_list %}
-            <li>
-                <a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }} </a>
-                ({% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %} - {% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %})
-            </li>
+            <tr>
+                <td><a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }}</a></td>
+                <td><a href="{{ author.get_absolute_url }}">{% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %} - {% if author.date_of_death %}{{ author.date_of_death }}{% endif %}</a></td>
+            </tr>
         {% endfor %}
-    </ul>
+    </table>
 {% else %}
     <p>There are no authors in the library.</p>
 {% endif %}

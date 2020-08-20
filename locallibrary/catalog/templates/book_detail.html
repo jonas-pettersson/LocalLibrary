@@ -15,18 +15,25 @@
 
         <div class="w3-container w3-margin">
             <h4>Copies</h4>
-            {% for book_instance in book.bookinstance_set.all %}
-                <div class="w3-ul">
-                    <li class="{% if book_instance.status == 'a' %}w3-text-green{% elif book_instance.status == 'm' %}w3-text-red{% else %}w3-text-yellow{% endif %}">
-                        {{ book_instance.get_status_display }}
-                    </li>
-                    {% if book_instance.status != 'a' %}
-                    <li><strong>Due to be returned: </strong>{{ book_instance.due_back }}</li>
-                    {% endif %}
-                    <li><strong>Imprint: </strong>{{ book_instance.imprint }}</li>
-                    <li class="text-muted"><strong>Id: </strong>{{ book_instance.id }} </li>
-                </div>
-            {% endfor %}
+
+            <table class="w3-table-all">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Due Date</th>
+                        <th>Imprint</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+                {% for book in book.bookinstance_set.all %}
+                    <tr class="{% if book.status == 'a' %}w3-text-green{% elif book.status == 'm' %}w3-text-red{% else %}w3-text-blue{% endif %}">
+                        <td>{{ book.get_status_display }}</td>
+                        <td>{% if book.status != 'a' %}{{ book.due_back }}{% endif %}</td>
+                        <td>{{ book.imprint }}</td>
+                        <td class="text-muted">{{ book.id }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
         </div>
     </div>
 
