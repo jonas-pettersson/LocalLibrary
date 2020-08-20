@@ -25,8 +25,8 @@
             <tr>
                 <td><a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }}</a></td>
                 <td><a href="{{ author.get_absolute_url }}">{% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %} - {% if author.date_of_death %}{{ author.date_of_death }}{% endif %}</a></td>
-                <td><a class="w3-button" href="{% url 'author_update' author.pk %}"><i class="fa fa-edit w3-text-green"></i></a></td>
-                <td><a class="w3-button" href="{% url 'author_delete' author.pk %}"><i class="fa fa-remove w3-text-red"></i></a></td>
+                <td><a class="w3-button" href="{% url 'author_update' author.pk %}"><i class="fa fa-edit w3-text-green w3-large"></i></a></td>
+                <td><a class="w3-button" href="{% url 'author_delete' author.pk %}"><i class="fa fa-remove w3-text-red w3-large"></i></a></td>
             </tr>
         {% endfor %}
     </table>
