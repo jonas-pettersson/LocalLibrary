@@ -1,9 +1,15 @@
-from django.shortcuts import render
+import datetime
+
+from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.decorators import permission_required
 from django.views.generic import ListView, DetailView
 
 from .models import Author, Book, BookInstance, Genre
+from .forms import RenewBookForm
 
 
 def catalog(request):
@@ -74,5 +80,27 @@ class LoanedBooksAllUsersListView(LoginRequiredMixin, PermissionRequiredMixin, L
         return BookInstance.objects.filter(status__exact='o').order_by('due_back')
 
 
+@permission_required('catalog.can_mark_returned')
 def renew_book(request, pk):
-    pass
+    book_instance = get_object_or_404(BookInstance, pk=pk)
+
+    if request.method == 'POST':
+        form = RenewBookForm(request.POST)
+
+        if form.is_valid():
+            book_instance.due_back = form.cleaned_data['renewal_date']
+            book_instance.save()
+
+            return HttpResponseRedirect(reverse('all_books'))
+
+    else:  # GET
+        proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
+        form = RenewBookForm(
+            initial={'renewal_date': proposed_renewal_date})
+
+    context = {
+        'form': form,
+        'book': book_instance,
+    }
+
+    return render(request, 'book_renewal.html', context)

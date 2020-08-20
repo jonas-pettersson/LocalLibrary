@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+
+        {% if form.errors %}
+            {% for error_tag, error_message  in form.errors.items %}
+                {% if error_tag == "__all__" %}
+                    <div class="w3-panel w3-red">
+                        <p>{{ error_message }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        <div class="w3-container w3-card-4 w3-light-grey">
+            <form method="post">
+                {% csrf_token %}
+                <fieldset class="form-group w3-border-0">
+                <h2>Renew: {{ book.book.title }}</h2>
+                <p>Borrower: {{ book.borrower }}</p>
+                <p class={% if book.is_overdue %}"w3-text-red"{% endif %}>Due date: {{ book.due_back }}</p>
+
+                <ul class="w3-ul">
+                    <li>                        
+                        <label for="renewal_date">{{ form.renewal_date.label_tag }}</label>
+                        {% if form.renewal_date.errors %}<div class="w3-panel w3-red">{{ form.renewal_date.errors }}</div>{% endif %}
+                        <input class="w3-input" type="date" id="renewal_date" name="renewal_date" value="{{ form.renewal_date.value|safe }}">
+                        {% if form.renewal_date.help_text %}
+                            <p class="w3-small">{{ form.renewal_date.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li class="w3-button">
+                        <button type="submit">Renew</button>
+                    </li>
+                </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+{% endblock %}
