@@ -3,10 +3,11 @@ import datetime
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import permission_required
 from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from .models import Author, Book, BookInstance, Genre
 from .forms import RenewBookForm
@@ -104,3 +105,21 @@ def renew_book(request, pk):
     }
 
     return render(request, 'book_renewal.html', context)
+
+
+class AuthorCreateView(CreateView):
+    model = Author
+    template_name = "author_form.html"
+    fields = '__all__'
+
+
+class AuthorUpdateView(UpdateView):
+    model = Author
+    template_name = "author_form.html"
+    fields = ['first_name', 'last_name', 'date_of_birth', 'date_of_death']
+
+
+class AuthorDeleteView(DeleteView):
+    model = Author
+    template_name = "author_confirm_delete.html"
+    success_url = reverse_lazy('authors')
