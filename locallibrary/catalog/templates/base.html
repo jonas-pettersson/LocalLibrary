@@ -36,10 +36,10 @@
             {% block navbar %}
                 <a class="w3-bar-item w3-button" href="{% url 'catalog' %}">Home</a>
                 <a class="w3-bar-item w3-button" href="{% url 'books' %}">All books</a>
-                <a class="w3-bar-item w3-button" href="{% url 'authors' %}">All authors</a>
                 {% if perms.catalog.can_mark_returned %}
                     <a class="w3-bar-item w3-button" href="{% url 'all_books' %}">Loaned books</a>
                 {% endif %}
+                <a class="w3-bar-item w3-button" href="{% url 'authors' %}">All authors</a>
                 {% if user.is_staff %}
                     <a class="w3-bar-item w3-button" href="{% url 'admin:index' %}">Admin</a>
                 {% endif %}
