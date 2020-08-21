@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="w3-container">
-        <div class="w3-cell-row">
-            <h1 class="w3-cell">{{ author.last_name }}, {{ author.first_name }}</h1>
-            <a class="w3-button w3-green w3-cell-bottom w3-margin-right" href="{% url 'author_update' author.pk %}">Update</a>
-            <a class="w3-button w3-red w3-cell-bottom" href="{% url 'author_delete' author.pk %}">Delete</a>
+    <div class="w3-container w3-khaki">
+        <div class="w3-row">
+            <div class="w3-half">
+                <h1 class="w3-cell">{{ author.last_name }}, {{ author.first_name }}</h1>
+            </div>
+            <div class="w3-half">
+                <a class="w3-button w3-green w3-margin" href="{% url 'author_update' author.pk %}">Update</a>
+                <a class="w3-button w3-red w3-margin" href="{% url 'author_delete' author.pk %}">Delete</a>
+            </div>
         </div>
-        <div class="w3-cell-row">
+        <div>
             <p>{% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %} - {% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %}</p>
         </div>
     </div>

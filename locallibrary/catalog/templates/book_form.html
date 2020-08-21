@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+        {% if form.errors %}
+            {% for error_tag, error_message  in form.errors.items %}
+                {% if error_tag == "__all__" %}
+                    <div class="w3-panel w3-red">
+                        <p>{{ error_message }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        <div class="w3-container w3-card-4 w3-light-grey">
+            <form method="post">
+                {% csrf_token %}
+                <fieldset class="form-group w3-border-0">
+                <ul class="w3-ul w3-half">
+                    <li>
+                        <label for="title">{{ form.title.label_tag }}</label>
+                        {% if form.title.errors %}<div class="w3-panel w3-red">{{ form.title.errors }}</div>{% endif %}
+                        <input class="w3-input" type="text" id="title" name="title" value="{{ form.title.value|safe }}">
+                        {% if form.title.help_text %}
+                            <p class="w3-small">{{ form.title.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <label for="author">{{ form.author.label_tag }}</label>
+                        {% if form.author.errors %}<div class="w3-panel w3-red">{{ form.author.errors }}</div>{% endif %}
+                        <select name="author" class="w3-select" id="author" selected="{{ book.author.id }}">
+                        {% for id, name in form.author.field.choices %}
+                            <option value="{{ id }}" {% if book.author.id == id %}selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                        </select>
+                        {% if form.author.help_text %}
+                            <p class="w3-small">{{ form.author.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <label for="summary">{{ form.summary.label_tag }}</label>
+                        {% if form.summary.errors %}<div class="w3-panel w3-red">{{ form.summary.errors }}</div>{% endif %}
+                        <textarea class="w3-input" id="summary" name="summary" >{{ form.summary.value|safe }}</textarea>
+                        {% if form.summary.help_text %}
+                            <p class="w3-small">{{ form.summary.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <label for="isbn">{{ form.isbn.label_tag }}</label>
+                        {% if form.isbn.errors %}<div class="w3-panel w3-red">{{ form.isbn.errors }}</div>{% endif %}
+                        <input class="w3-input" type="text" id="isbn" name="isbn" value="{{ form.isbn.value|safe }}">
+                        {% if form.isbn.help_text %}
+                            <p class="w3-small">{{ form.isbn.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <label for="genre">{{ form.genre.label_tag }}</label>
+                        {% if form.genre.errors %}<div class="w3-panel w3-red">{{ form.genre.errors }}</div>{% endif %}
+                        <select name="genre" class="w3-select" id="genre" size="4" multiple>
+                        {% for id, name in form.genre.field.choices %}
+                            <option value="{{ id }}" {% if name in book.genre.all|join:" " %}selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                        </select>
+                        {% if form.genre.help_text %}
+                            <p class="w3-small">{{ form.genre.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <button class="w3-button w3-green" type="submit">Save</button>
+                    </li>
+                </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+{% endblock %}

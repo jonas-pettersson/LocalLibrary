@@ -123,3 +123,25 @@ class AuthorDeleteView(DeleteView):
     model = Author
     template_name = "author_confirm_delete.html"
     success_url = reverse_lazy('authors')
+
+
+class BookCreateView(CreateView):
+    model = Book
+    template_name = "book_form.html"
+    fields = '__all__'
+    initial = {'title': '',
+               'summary': '',
+               'isbn': ''
+               }
+
+
+class BookUpdateView(UpdateView):
+    model = Book
+    template_name = "book_form.html"
+    fields = '__all__'
+
+
+class BookDeleteView(DeleteView):
+    model = Book
+    template_name = "book_confirm_delete.html"
+    success_url = reverse_lazy('books')

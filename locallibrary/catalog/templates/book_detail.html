@@ -2,7 +2,15 @@
 
 {% block content %}
     <div class="w3-container w3-teal">
-        <h1>Title: {{ book.title }}</h1>
+        <div class="w3-row">
+            <div class="w3-half">
+                <h1>{{ book.title }}</h1>
+            </div>
+            <div class="w3-half">
+                <a class="w3-button w3-green w3-margin" href="{% url 'book_update' book.pk %}">Update</a>
+                <a class="w3-button w3-red w3-margin" href="{% url 'book_delete' book.pk %}">Delete</a>
+            </div>
+        </div>
     </div>
 
     <div class="w3-container">
