@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<h1>Delete Author</h1>
-
-<p>Are you sure you want to delete the author: {{ author }}?</p>
-
-<form action="" method="POST">
-  {% csrf_token %}
-  <input type="submit" value="Yes, delete.">
-</form>
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+        <h4>Delete Author</h4>
+        <p>Are you sure you want to delete the author: {{ author }}?</p>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button class="w3-button w3-red" type="submit">Yes, delete</button>
+        </form>
+    </div>
 
 {% endblock %}

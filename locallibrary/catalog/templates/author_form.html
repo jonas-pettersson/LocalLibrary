@@ -1,11 +1,72 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <form action="" method="post">
+  {% comment %} <form action="" method="post">
     {% csrf_token %}
     <table>
     {{ form.as_table }}
     </table>
     <input type="submit" value="Submit">
-  </form>
+  </form> {% endcomment %}
+
+
+<div class="w3-container w3-white w3-margin w3-padding-large">
+
+        {% if form.errors %}
+            {% for error_tag, error_message  in form.errors.items %}
+                {% if error_tag == "__all__" %}
+                    <div class="w3-panel w3-red">
+                        <p>{{ error_message }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        <div class="w3-container w3-card-4 w3-light-grey">
+            <form method="post">
+                {% csrf_token %}
+                <fieldset class="form-group w3-border-0">
+                <ul class="w3-ul">
+                    <li>                        
+                        <label for="form.first_name">{{ form.first_name.label_tag }}</label>
+                        {% if form.first_name.errors %}<div class="w3-panel w3-red">{{ form.first_name.errors }}</div>{% endif %}
+                        <input class="w3-input" type="text" id="first_name" name="first_name" value="{{ form.first_name.value|safe }}">
+                        {% if form.first_name.help_text %}
+                            <p class="w3-small">{{ form.first_name.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>                        
+                        <label for="form.last_name">{{ form.last_name.label_tag }}</label>
+                        {% if form.last_name.errors %}<div class="w3-panel w3-red">{{ form.last_name.errors }}</div>{% endif %}
+                        <input class="w3-input" type="text" id="last_name" name="last_name" value="{{ form.last_name.value|safe }}">
+                        {% if form.last_name.help_text %}
+                            <p class="w3-small">{{ form.last_name.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>                        
+                        <label for="form.date_of_birth">{{ form.date_of_birth.label_tag }}</label>
+                        {% if form.date_of_birth.errors %}<div class="w3-panel w3-red">{{ form.date_of_birth.errors }}</div>{% endif %}
+                        <input class="w3-input" type="date" id="date_of_birth" name="date_of_birth" value="{{ form.date_of_birth.value|safe }}">
+                        {% if form.date_of_birth.help_text %}
+                            <p class="w3-small">{{ form.date_of_birth.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li>                        
+                        <label for="form.date_of_death">{{ form.date_of_death.label_tag }}</label>
+                        {% if form.date_of_death.errors %}<div class="w3-panel w3-red">{{ form.date_of_death.errors }}</div>{% endif %}
+                        <input class="w3-input" type="date" id="date_of_death" name="date_of_death" value="{{ form.date_of_death.value|safe }}">
+                        {% if form.date_of_death.help_text %}
+                            <p class="w3-small">{{ form.date_of_death.help_text|safe }}</p>
+                        {% endif %}
+                    </li>
+                    <li class="w3-button">
+                        <button type="submit">Save</button>
+                    </li>
+                </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
 {% endblock %}
