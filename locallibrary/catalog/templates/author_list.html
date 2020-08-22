@@ -8,7 +8,7 @@
 <hr>
 <div class="w3-container w3-cell-row">
     <h4 class="w3-cell">List of authors</h4>
-    <a class="w3-button w3-cell w3-right w3-green" href="{% url 'author_create' %}">Add</a>
+    {% if perms.catalog.add_author %}<a class="w3-button w3-cell w3-right w3-green" href="{% url 'author_create' %}">Add</a>{% endif %}
 </div>
 
 {% if author_list %}
@@ -17,16 +17,20 @@
             <tr class="w3-dark-grey">
                 <th>Name</th>
                 <th>Lived</th>
-                <th></th>
-                <th></th>
+                {% if perms.catalog.change_author %}<th></th>{% endif %}
+                {% if perms.catalog.delete_author %}<th></th>{% endif %}
             </tr>
         </thead>
         {% for author in author_list %}
             <tr>
                 <td><a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }}</a></td>
                 <td><a href="{{ author.get_absolute_url }}">{% if author.date_of_birth %}{{ author.date_of_birth }}{% endif %} - {% if author.date_of_death %}{{ author.date_of_death }}{% endif %}</a></td>
-                <td><a class="w3-button" href="{% url 'author_update' author.pk %}"><i class="fa fa-edit w3-text-green w3-large"></i></a></td>
-                <td><a class="w3-button" href="{% url 'author_delete' author.pk %}"><i class="fa fa-remove w3-text-red w3-large"></i></a></td>
+                {% if perms.catalog.change_author %}
+                    <td><a class="w3-button" href="{% url 'author_update' author.pk %}"><i class="fa fa-edit w3-text-green w3-large"></i></a></td>
+                {% endif %}
+                {% if perms.catalog.delete_author %}
+                    <td><a class="w3-button" href="{% url 'author_delete' author.pk %}"><i class="fa fa-remove w3-text-red w3-large"></i></a></td>
+                {% endif %}
             </tr>
         {% endfor %}
     </table>

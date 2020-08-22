@@ -7,8 +7,8 @@
                 <h1 class="w3-cell">{{ author.last_name }}, {{ author.first_name }}</h1>
             </div>
             <div class="w3-half">
-                <a class="w3-button w3-green w3-margin" href="{% url 'author_update' author.pk %}">Update</a>
-                <a class="w3-button w3-red w3-margin" href="{% url 'author_delete' author.pk %}">Delete</a>
+                {% if perms.catalog.change_author %}<a class="w3-button w3-green w3-margin" href="{% url 'author_update' author.pk %}">Update</a>{% endif %}
+                {% if perms.catalog.delete_author %}<a class="w3-button w3-red w3-margin" href="{% url 'author_delete' author.pk %}">Delete</a>{% endif %}
             </div>
         </div>
         <div>

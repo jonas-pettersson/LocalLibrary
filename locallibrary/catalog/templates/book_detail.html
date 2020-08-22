@@ -7,8 +7,8 @@
                 <h1>{{ book.title }}</h1>
             </div>
             <div class="w3-half">
-                <a class="w3-button w3-green w3-margin" href="{% url 'book_update' book.pk %}">Update</a>
-                <a class="w3-button w3-red w3-margin" href="{% url 'book_delete' book.pk %}">Delete</a>
+                {% if perms.catalog.change_book %}<a class="w3-button w3-green w3-margin" href="{% url 'book_update' book.pk %}">Update</a>{% endif %}
+                {% if perms.catalog.delete_book %}<a class="w3-button w3-red w3-margin" href="{% url 'book_delete' book.pk %}">Delete</a>{% endif %}
             </div>
         </div>
     </div>

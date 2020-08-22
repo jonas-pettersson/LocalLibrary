@@ -107,25 +107,29 @@ def renew_book(request, pk):
     return render(request, 'book_renewal.html', context)
 
 
-class AuthorCreateView(CreateView):
+class AuthorCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+    permission_required = 'catalog.add_author'
     model = Author
     template_name = "author_form.html"
     fields = '__all__'
 
 
-class AuthorUpdateView(UpdateView):
+class AuthorUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = 'catalog.change_author'
     model = Author
     template_name = "author_form.html"
     fields = ['first_name', 'last_name', 'date_of_birth', 'date_of_death']
 
 
-class AuthorDeleteView(DeleteView):
+class AuthorDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = 'catalog.delete_author'
     model = Author
     template_name = "author_confirm_delete.html"
     success_url = reverse_lazy('authors')
 
 
-class BookCreateView(CreateView):
+class BookCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
+    permission_required = 'catalog.add_book'
     model = Book
     template_name = "book_form.html"
     fields = '__all__'
@@ -135,13 +139,15 @@ class BookCreateView(CreateView):
                }
 
 
-class BookUpdateView(UpdateView):
+class BookUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    permission_required = 'catalog.change_book'
     model = Book
     template_name = "book_form.html"
     fields = '__all__'
 
 
-class BookDeleteView(DeleteView):
+class BookDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    permission_required = 'catalog.delete_book'
     model = Book
     template_name = "book_confirm_delete.html"
     success_url = reverse_lazy('books')

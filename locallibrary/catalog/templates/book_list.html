@@ -8,7 +8,7 @@
 <hr>
 <div class="w3-container w3-cell-row">
     <h4 class="w3-cell">List of books</h4>
-    <a class="w3-button w3-cell w3-right w3-green" href="{% url 'book_create' %}">Add</a>
+    {% if perms.catalog.add_book %}<a class="w3-button w3-cell w3-right w3-green" href="{% url 'book_create' %}">Add</a>{% endif %}
 </div>
 
 {% if book_list %}
@@ -17,16 +17,20 @@
             <tr class="w3-dark-grey">
                 <th>Title</th>
                 <th>Author</th>
-                <th></th>
-                <th></th>
+                {% if perms.catalog.change_book %}<th></th>{% endif %}
+                {% if perms.catalog.delete_book %}<th></th>{% endif %}
             </tr>
         </thead>
         {% for book in book_list %}
             <tr>
                 <td><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></td>
                 <td><a href="{{ book.get_absolute_url }}">{{ book.author }}</a></td>
-                <td><a class="w3-button" href="{% url 'book_update' book.pk %}"><i class="fa fa-edit w3-text-green w3-large"></i></a></td>
-                <td><a class="w3-button" href="{% url 'book_delete' book.pk %}"><i class="fa fa-remove w3-text-red w3-large"></i></a></td>
+                {% if perms.catalog.change_book %}
+                    <td><a class="w3-button" href="{% url 'book_update' book.pk %}"><i class="fa fa-edit w3-text-green w3-large"></i></a></td>
+                {% endif %}
+                {% if perms.catalog.delete_book %}
+                    <td><a class="w3-button" href="{% url 'book_delete' book.pk %}"><i class="fa fa-remove w3-text-red w3-large"></i></a></td>
+                {% endif %}
             </tr>
         {% endfor %}
     </table>
