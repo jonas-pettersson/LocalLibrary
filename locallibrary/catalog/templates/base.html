@@ -70,10 +70,10 @@
 
             <hr>
 
-            <div class="w3-bar">
+            <div class="w3-container">
                 {% block pagination %}
                     {% if is_paginated %}
-                        <div class="w3-bar w3-border w3-round">
+                        <div class="w3-bar">
                             {% if page_obj.has_previous %}
                                 <a class="w3-button" href="{{ request.path }}?page={{ page_obj.previous_page_number }}">&#10094; Previous</a>
                             {% endif %}
