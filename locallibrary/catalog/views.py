@@ -45,6 +45,7 @@ class BookListView(ListView):
     model = Book
     template_name = 'book_list.html'
     paginate_by = 10
+    ordering = ['title']
 
 
 class BookDetailView(DetailView):
@@ -55,6 +56,8 @@ class BookDetailView(DetailView):
 class AuthorListView(ListView):
     model = Author
     template_name = 'author_list.html'
+    paginate_by = 10
+    ordering = ['last_name', 'first_name']
 
 
 class AuthorDetailView(DetailView):
