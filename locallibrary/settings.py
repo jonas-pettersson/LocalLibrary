@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 'r%g&%&1314map6my$46ah0@y^x^-_$ojclruj4-et%u@&k1zgv')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG_VALUE', '') != 'False'
 
 ALLOWED_HOSTS = ['django-library-pettersson.herokuapp.com']
 
