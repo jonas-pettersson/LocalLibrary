@@ -260,7 +260,7 @@
   "fields": {
     "title": "Odyssee",
     "author": 1,
-    "summary": "Die Odyssee, neben der Ilias das zweite dem griechischen Dichter Homer zugeschriebene Epos, gehoert zu den ältesten und einflussreichsten Dichtungen der abendländischen Literatur. In Schriftform wurde das Werk erstmals wahrscheinlich um die Wende vom 8. zum 7. Jahrhundert v. Chr. festgehalten. Es schildert die Abenteuer des Koenigs Odysseus von Ithaka und seiner Gefährten auf der Heimkehr aus dem Trojanischen Krieg. In vielen Sprachen ist der Begriff „Odyssee“ zum Synonym für eine lange Irrfahrt geworden.",
+    "summary": "Die Odyssee, neben der Ilias das zweite dem griechischen Dichter Homer zugeschriebene Epos, gehoert zu den aeltesten und einflussreichsten Dichtungen der abendlaendischen Literatur. In Schriftform wurde das Werk erstmals wahrscheinlich um die Wende vom 8. zum 7. Jahrhundert v. Chr. festgehalten. Es schildert die Abenteuer des Koenigs Odysseus von Ithaka und seiner Gefaehrten auf der Heimkehr aus dem Trojanischen Krieg. In vielen Sprachen ist der Begriff „Odyssee“ zum Synonym für eine lange Irrfahrt geworden.",
     "isbn": "3-7608-1542-1",
     "genre": [
       1
@@ -273,7 +273,7 @@
   "fields": {
     "title": "Parzival",
     "author": 2,
-    "summary": "Parzival von Wolfram von Eschenbach ist ein Versroman der mittelhochdeutschen hoefischen Literatur, der zwischen 1200 und 1210 entstand[1]. Das Werk umfasst etwa 25.000 paarweise gereimte Verse und wird in den modernen Ausgaben in 16 Bücher gegliedert.\r\n\r\nIn kunstvoll verzahnten Handlungssträngen einer Doppelromanstruktur werden die Aventiuren erzählt, die abenteuerlichen Geschicke zweier ritterlicher Hauptfiguren – einerseits die Entwicklung des Titelhelden Parzival (von altfranzoesisch Perceval) vom Unwissenden im Narrenkleid zum Gralskoenig, andererseits die gefahrvollen Bewährungsproben für den Artusritter Gawain.\r\n\r\nThematisch gehoert der Roman zur sogenannten Artusepik, wobei die Aufnahme Parzivals in die Tafelrunde des mythischen britannischen Koenigs nur als Durchgangsstation der Gralssuche erscheint, doch dann zur Voraussetzung seiner Bestimmung als Gralskoenig wird.",
+    "summary": "Parzival von Wolfram von Eschenbach ist ein Versroman der mittelhochdeutschen hoefischen Literatur, der zwischen 1200 und 1210 entstand[1]. Das Werk umfasst etwa 25.000 paarweise gereimte Verse und wird in den modernen Ausgaben in 16 Bücher gegliedert.\r\n\r\nIn kunstvoll verzahnten Handlungsstraengen einer Doppelromanstruktur werden die Aventiuren erzaehlt, die abenteuerlichen Geschicke zweier ritterlicher Hauptfiguren – einerseits die Entwicklung des Titelhelden Parzival (von altfranzoesisch Perceval) vom Unwissenden im Narrenkleid zum Gralskoenig, andererseits die gefahrvollen Bewaehrungsproben für den Artusritter Gawain.\r\n\r\nThematisch gehoert der Roman zur sogenannten Artusepik, wobei die Aufnahme Parzivals in die Tafelrunde des mythischen britannischen Koenigs nur als Durchgangsstation der Gralssuche erscheint, doch dann zur Voraussetzung seiner Bestimmung als Gralskoenig wird.",
     "isbn": "ISBN 3-596-13",
     "genre": [
       1
@@ -299,7 +299,7 @@
   "fields": {
     "title": "Die Goettliche Komoedie",
     "author": 4,
-    "summary": "Die Goettliche Komoedie, italienisch ursprünglich Comedia oder Commedia (‚Komoedie‘), in späterer Zeit auch Divina Commedia genannt, ist das Hauptwerk des italienischen Dichters Dante Alighieri (1265–1321). Sie entstand während der Jahre seines Exils und wurde wahrscheinlich um 1307 begonnen und erst kurze Zeit vor seinem Tod vollendet (1321). Die in Hoelle, Fegefeuer und Paradies aufgeteilte Divina Commedia gilt als bedeutendste Dichtung der italienischen Literatur und hat gleichzeitig die italienische Sprache als Schriftsprache erst begründet. Zudem wird sie als eines der groeßten Werke der Weltliteratur angesehen.",
+    "summary": "Die Goettliche Komoedie, italienisch ursprünglich Comedia oder Commedia (‚Komoedie‘), in spaeterer Zeit auch Divina Commedia genannt, ist das Hauptwerk des italienischen Dichters Dante Alighieri (1265–1321). Sie entstand waehrend der Jahre seines Exils und wurde wahrscheinlich um 1307 begonnen und erst kurze Zeit vor seinem Tod vollendet (1321). Die in Hoelle, Fegefeuer und Paradies aufgeteilte Divina Commedia gilt als bedeutendste Dichtung der italienischen Literatur und hat gleichzeitig die italienische Sprache als Schriftsprache erst begründet. Zudem wird sie als eines der groeßten Werke der Weltliteratur angesehen.",
     "isbn": "978-3-465-025",
     "genre": [
       3
@@ -312,7 +312,7 @@
   "fields": {
     "title": "Die Leiden des jungen Werthers",
     "author": 5,
-    "summary": "Die Leiden des jungen Werthers lautet der ursprüngliche Titel des von Johann Wolfgang Goethe verfassten Briefromans, in dem der junge Rechtspraktikant Werther bis zu seinem Suizid über seine unglückliche Liebesbeziehung zu der mit einem anderen Mann verlobten Lotte berichtet. Er wurde 1774 veroeffentlicht und war nach dem nationalen Erfolg des Dramas Goetz von Berlichingen (1773) Goethes zweiter großer, jetzt sogar europäischer Erfolg. Beide Werke sind der literarischen Stroemung des Sturm und Drang zuzuordnen.",
+    "summary": "Die Leiden des jungen Werthers lautet der ursprüngliche Titel des von Johann Wolfgang Goethe verfassten Briefromans, in dem der junge Rechtspraktikant Werther bis zu seinem Suizid über seine unglückliche Liebesbeziehung zu der mit einem anderen Mann verlobten Lotte berichtet. Er wurde 1774 veroeffentlicht und war nach dem nationalen Erfolg des Dramas Goetz von Berlichingen (1773) Goethes zweiter großer, jetzt sogar europaeischer Erfolg. Beide Werke sind der literarischen Stroemung des Sturm und Drang zuzuordnen.",
     "isbn": "978-3-88377-9",
     "genre": [
       4
@@ -338,7 +338,7 @@
   "fields": {
     "title": "Die Wahlverwandtschaften",
     "author": 5,
-    "summary": "Die Wahlverwandtschaften ist ein Roman von Johann Wolfgang von Goethe aus dem Jahr 1809. Er beschreibt die Geschichte des in abgeschiedener Zweisamkeit lebenden Paares Charlotte und Eduard, deren Ehe durch das Hinzukommen zweier weiterer Figuren auseinanderbricht. Wie gleichsam in einer chemischen Reaktion erfahren beide Eheleute eine starke, jeweils auch erwiderte, neue Anziehung: die vernunftbetonte Charlotte zu dem verständig-tatkräftigen Hauptmann Otto; der impulsiv-leidenschaftliche Eduard zu der heranwachsenden, auf stille Weise reizvollen Ottilie. Der Konflikt zwischen Leidenschaft und Vernunft führt ins Chaos und schließlich zu einem tragischen Ende.",
+    "summary": "Die Wahlverwandtschaften ist ein Roman von Johann Wolfgang von Goethe aus dem Jahr 1809. Er beschreibt die Geschichte des in abgeschiedener Zweisamkeit lebenden Paares Charlotte und Eduard, deren Ehe durch das Hinzukommen zweier weiterer Figuren auseinanderbricht. Wie gleichsam in einer chemischen Reaktion erfahren beide Eheleute eine starke, jeweils auch erwiderte, neue Anziehung: die vernunftbetonte Charlotte zu dem verstaendig-tatkraeftigen Hauptmann Otto; der impulsiv-leidenschaftliche Eduard zu der heranwachsenden, auf stille Weise reizvollen Ottilie. Der Konflikt zwischen Leidenschaft und Vernunft führt ins Chaos und schließlich zu einem tragischen Ende.",
     "isbn": "3-11-017696-3",
     "genre": [
       4
@@ -351,7 +351,7 @@
   "fields": {
     "title": "Das Decamerone",
     "author": 6,
-    "summary": "Sammlung von 100 Novellen von Giovanni Boccaccio. Die Rahmenhandlung verlegt Boccaccio in ein Landhaus in den Hügeln von Florenz (im Vorort Fiesole), drei Kilometer vom damaligen Stadtkern von Florenz entfernt. In dieses Landhaus sind sieben Frauen und drei junge Männer vor der Pest (Schwarzer Tod) geflüchtet, die im Frühjahr und Sommer des Jahres 1348 Florenz heimsuchte. Im Landhaus versuchen sich die Flüchtlinge gegenseitig zu unterhalten. Daher wird jeden Tag eine Koenigin oder ein Koenig bestimmt, welcher einen Themenkreis vorgibt. Zu diesem Themenkreis hat sich nun jeder der Anwesenden eine Geschichte auszudenken und zum Besten zu geben. Nach zehn Tagen und zehn mal zehn Novellen kehrt die Gruppe",
+    "summary": "Sammlung von 100 Novellen von Giovanni Boccaccio. Die Rahmenhandlung verlegt Boccaccio in ein Landhaus in den Hügeln von Florenz (im Vorort Fiesole), drei Kilometer vom damaligen Stadtkern von Florenz entfernt. In dieses Landhaus sind sieben Frauen und drei junge Maenner vor der Pest (Schwarzer Tod) geflüchtet, die im Frühjahr und Sommer des Jahres 1348 Florenz heimsuchte. Im Landhaus versuchen sich die Flüchtlinge gegenseitig zu unterhalten. Daher wird jeden Tag eine Koenigin oder ein Koenig bestimmt, welcher einen Themenkreis vorgibt. Zu diesem Themenkreis hat sich nun jeder der Anwesenden eine Geschichte auszudenken und zum Besten zu geben. Nach zehn Tagen und zehn mal zehn Novellen kehrt die Gruppe",
     "isbn": "978-3-596-900",
     "genre": [
       6
@@ -364,7 +364,7 @@
   "fields": {
     "title": "Candide",
     "author": 7,
-    "summary": "Satirische Novelle des franzoesischen Philosophen Voltaire. Im Jahr 1776 erschien eine deutsche Übersetzung unter dem Titel Candide oder die beste aller Welten. Diese Satire wendet sich unter anderem gegen die optimistische Weltanschauung Gottfried Wilhelm Leibniz’, der die beste aller moeglichen Welten postulierte. Voltaire propagiert Skeptizismus und Pessimismus, die Leibniz’ Postulat in den Kontext der Zeit rücken (Eindruck des Erdbebens von Lissabon 1755, Siebenjähriger Krieg) und in Frage stellen. Mit Witz und Ironie prangert Voltaire in seinem „conte philosophique“ den überheblichen Adel, die kirchliche Inquisition, Krieg und Sklaverei an und verspottet die naive Utopie des einfachen Mannes von einem sorglosen Leben.",
+    "summary": "Satirische Novelle des franzoesischen Philosophen Voltaire. Im Jahr 1776 erschien eine deutsche Übersetzung unter dem Titel Candide oder die beste aller Welten. Diese Satire wendet sich unter anderem gegen die optimistische Weltanschauung Gottfried Wilhelm Leibniz’, der die beste aller moeglichen Welten postulierte. Voltaire propagiert Skeptizismus und Pessimismus, die Leibniz’ Postulat in den Kontext der Zeit rücken (Eindruck des Erdbebens von Lissabon 1755, Siebenjaehriger Krieg) und in Frage stellen. Mit Witz und Ironie prangert Voltaire in seinem „conte philosophique“ den überheblichen Adel, die kirchliche Inquisition, Krieg und Sklaverei an und verspottet die naive Utopie des einfachen Mannes von einem sorglosen Leben.",
     "isbn": "3-15-006549-6",
     "genre": [
       7
@@ -377,7 +377,7 @@
   "fields": {
     "title": "Die Bekenntnisse",
     "author": 8,
-    "summary": "Ab 1763 verfasste Rousseau eine ganze Reihe kürzerer und längerer autobiografischer Texte, darunter seine 1765–1770 geschriebenen, später berühmt gewordenen Confessions (Die Bekenntnisse), die erst posthum publiziert wurden. Darin schildert er auch intime Details aus seinem Leben sowie eigene Verfehlungen. Vor allem diese Schrift begründete die Untergattung der „selbstentbloessenden“ Autobiografie. Den Titel wählte er in Anlehnung an den der Confessiones des Augustinus von Hippo.",
+    "summary": "Ab 1763 verfasste Rousseau eine ganze Reihe kürzerer und laengerer autobiografischer Texte, darunter seine 1765–1770 geschriebenen, spaeter berühmt gewordenen Confessions (Die Bekenntnisse), die erst posthum publiziert wurden. Darin schildert er auch intime Details aus seinem Leben sowie eigene Verfehlungen. Vor allem diese Schrift begründete die Untergattung der „selbstentbloessenden“ Autobiografie. Den Titel waehlte er in Anlehnung an den der Confessiones des Augustinus von Hippo.",
     "isbn": "3-7608-1542-1",
     "genre": [
       8
@@ -390,7 +390,7 @@
   "fields": {
     "title": "Zum ewigen Frieden",
     "author": 9,
-    "summary": "Ein philosophischer Entwurf (erste Auflage 1795 (zit. als A) 104 S., zweite, erweiterte Auflage 1796 (zit. als B), 112 S.) gehoert zu den bekanntesten Werken des deutschen Philosophen Immanuel Kant. Moderne Bedeutungen des Begriffs Frieden gehen entscheidend auf die hier vorgestellte Theorie zurück.\r\n\r\nIn Form eines Friedensvertrages wendet Kant seine Moralphilosophie (vgl. Grundlegung zur Metaphysik der Sitten, Kategorischer Imperativ) auf die Politik an, um die Frage zu beantworten, ob und wie dauerhafter Frieden zwischen den Staaten moeglich wäre. \r\n\r\nBekannt geworden sind die Ideen des Voelkerrechts, das die Verbindlichkeit der zwischenstaatlichen Abkommen fordert, und die Ausrichtung des Friedens als voelkerrechtlichen Vertrag. In den Internationalen Beziehungen wird „Zum ewigen Frieden“ den liberalen Theorien zugeordnet. Die Charta der Vereinten Nationen wurde wesentlich von dieser Schrift beeinflusst.",
+    "summary": "Ein philosophischer Entwurf (erste Auflage 1795 (zit. als A) 104 S., zweite, erweiterte Auflage 1796 (zit. als B), 112 S.) gehoert zu den bekanntesten Werken des deutschen Philosophen Immanuel Kant. Moderne Bedeutungen des Begriffs Frieden gehen entscheidend auf die hier vorgestellte Theorie zurück.\r\n\r\nIn Form eines Friedensvertrages wendet Kant seine Moralphilosophie (vgl. Grundlegung zur Metaphysik der Sitten, Kategorischer Imperativ) auf die Politik an, um die Frage zu beantworten, ob und wie dauerhafter Frieden zwischen den Staaten moeglich waere. \r\n\r\nBekannt geworden sind die Ideen des Voelkerrechts, das die Verbindlichkeit der zwischenstaatlichen Abkommen fordert, und die Ausrichtung des Friedens als voelkerrechtlichen Vertrag. In den Internationalen Beziehungen wird „Zum ewigen Frieden“ den liberalen Theorien zugeordnet. Die Charta der Vereinten Nationen wurde wesentlich von dieser Schrift beeinflusst.",
     "isbn": "978-3-596-900",
     "genre": [
       9
@@ -403,7 +403,7 @@
   "fields": {
     "title": "Kritik der praktischen Vernunft",
     "author": 9,
-    "summary": "Die KpV enthält Kants Theorie der Moralbegründung und gilt bis heute als eines der wichtigsten Werke der Praktischen Philosophie überhaupt. Wie die drei Jahre früher erschienene Grundlegung zur Metaphysik der Sitten ist die KpV eine Grundlegungsschrift, die keine Auseinandersetzung mit der praktischen Anwendung der Grundsätze der Moral zum Gegenstand hat, sondern auf die Frage antwortet, wie das menschliche Handeln durch die praktische Vernunft bestimmt werden kann. In der KpV geht es vor allem darum, das grundlegende Prinzip der Moral, ihre Aufgaben und Grenzen festzusetzen. Kants Auffassungen zur praktischen Moralphilosophie finden sich in der Metaphysik der Sitten sowie in seinen Vorlesungen zur Moralphilosophie",
+    "summary": "Die KpV enthaelt Kants Theorie der Moralbegründung und gilt bis heute als eines der wichtigsten Werke der Praktischen Philosophie überhaupt. Wie die drei Jahre früher erschienene Grundlegung zur Metaphysik der Sitten ist die KpV eine Grundlegungsschrift, die keine Auseinandersetzung mit der praktischen Anwendung der Grundsaetze der Moral zum Gegenstand hat, sondern auf die Frage antwortet, wie das menschliche Handeln durch die praktische Vernunft bestimmt werden kann. In der KpV geht es vor allem darum, das grundlegende Prinzip der Moral, ihre Aufgaben und Grenzen festzusetzen. Kants Auffassungen zur praktischen Moralphilosophie finden sich in der Metaphysik der Sitten sowie in seinen Vorlesungen zur Moralphilosophie",
     "isbn": "3-7873-1650-7",
     "genre": [
       9
@@ -416,7 +416,7 @@
   "fields": {
     "title": "Kritik der reinen Vernunft",
     "author": 9,
-    "summary": "Die Kritik der reinen Vernunft (KrV; im Original Critik der reinen Vernunft) ist das erkenntnistheoretische Hauptwerk des Philosophen Immanuel Kant, in dem er den Grundriss für seine Transzendentalphilosophie liefert. Die KrV wird als eines der einflussreichsten Werke in der Philosophiegeschichte betrachtet und kennzeichnet einen Wendepunkt und den Beginn der modernen Philosophie. Kant schrieb die KrV als erste seiner drei „Kritiken“, es folgten die Kritik der praktischen Vernunft und die Kritik der Urteilskraft. An die KrV schließen zudem die Prolegomena von 1783 an.\r\n\r\nDie Kritik der reinen Vernunft erschien in deutscher Sprache in erster Auflage (A) im Jahr 1781 bei Johann Friedrich Hartknoch. Eine zweite Auflage (B), in Abschnitten wesentlich verändert und erweitert, kam 1787 heraus. In den 1790er Jahren erschienen weitere Fassungen, die sich aber nur unwesentlich von der zweiten Auflage unterschieden.",
+    "summary": "Die Kritik der reinen Vernunft (KrV; im Original Critik der reinen Vernunft) ist das erkenntnistheoretische Hauptwerk des Philosophen Immanuel Kant, in dem er den Grundriss für seine Transzendentalphilosophie liefert. Die KrV wird als eines der einflussreichsten Werke in der Philosophiegeschichte betrachtet und kennzeichnet einen Wendepunkt und den Beginn der modernen Philosophie. Kant schrieb die KrV als erste seiner drei „Kritiken“, es folgten die Kritik der praktischen Vernunft und die Kritik der Urteilskraft. An die KrV schließen zudem die Prolegomena von 1783 an.\r\n\r\nDie Kritik der reinen Vernunft erschien in deutscher Sprache in erster Auflage (A) im Jahr 1781 bei Johann Friedrich Hartknoch. Eine zweite Auflage (B), in Abschnitten wesentlich veraendert und erweitert, kam 1787 heraus. In den 1790er Jahren erschienen weitere Fassungen, die sich aber nur unwesentlich von der zweiten Auflage unterschieden.",
     "isbn": "3-7873-1650-7",
     "genre": [
       9
@@ -429,7 +429,7 @@
   "fields": {
     "title": "Das Jahr des Hasen",
     "author": 10,
-    "summary": "Liebevoll-skurriler Roadtrip durch die finnische Wildnis Seine Arbeit oedet ihn an, seine Ehe ist schon seit Jahren eine Qual - der Journalist Vatanen schleppt sich von einem Tag zum nächsten. Bis ihm auf der Heimfahrt von einem seiner üblichen langweiligen Pressetermine ein junger Hase vors Auto hoppelt ... und Vatanens ehemals so hübsch geordnetes Leben zum Abenteuer wird, das ihn quer durch Finnland führt. Ein wunderbar erzählter Roman, todernst und urkomisch zugleich - von Arto Paasilinna, dem vielfach ausgezeichneten Meister des skurrilen Humors",
+    "summary": "Liebevoll-skurriler Roadtrip durch die finnische Wildnis Seine Arbeit oedet ihn an, seine Ehe ist schon seit Jahren eine Qual - der Journalist Vatanen schleppt sich von einem Tag zum naechsten. Bis ihm auf der Heimfahrt von einem seiner üblichen langweiligen Pressetermine ein junger Hase vors Auto hoppelt ... und Vatanens ehemals so hübsch geordnetes Leben zum Abenteuer wird, das ihn quer durch Finnland führt. Ein wunderbar erzaehlter Roman, todernst und urkomisch zugleich - von Arto Paasilinna, dem vielfach ausgezeichneten Meister des skurrilen Humors",
     "isbn": "3-929029-13-8",
     "genre": [
       3,
