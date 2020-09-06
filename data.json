@@ -209,7 +209,7 @@
   "model": "catalog.genre",
   "pk": 3,
   "fields": {
-    "name": "Komödie"
+    "name": "Komoedie"
   }
 },
 {
@@ -223,7 +223,7 @@
   "model": "catalog.genre",
   "pk": 5,
   "fields": {
-    "name": "Tragödie"
+    "name": "Tragoedie"
   }
 },
 {
@@ -260,7 +260,7 @@
   "fields": {
     "title": "Odyssee",
     "author": 1,
-    "summary": "Die Odyssee, neben der Ilias das zweite dem griechischen Dichter Homer zugeschriebene Epos, gehört zu den ältesten und einflussreichsten Dichtungen der abendländischen Literatur. In Schriftform wurde das Werk erstmals wahrscheinlich um die Wende vom 8. zum 7. Jahrhundert v. Chr. festgehalten. Es schildert die Abenteuer des Königs Odysseus von Ithaka und seiner Gefährten auf der Heimkehr aus dem Trojanischen Krieg. In vielen Sprachen ist der Begriff „Odyssee“ zum Synonym für eine lange Irrfahrt geworden.",
+    "summary": "Die Odyssee, neben der Ilias das zweite dem griechischen Dichter Homer zugeschriebene Epos, gehoert zu den ältesten und einflussreichsten Dichtungen der abendländischen Literatur. In Schriftform wurde das Werk erstmals wahrscheinlich um die Wende vom 8. zum 7. Jahrhundert v. Chr. festgehalten. Es schildert die Abenteuer des Koenigs Odysseus von Ithaka und seiner Gefährten auf der Heimkehr aus dem Trojanischen Krieg. In vielen Sprachen ist der Begriff „Odyssee“ zum Synonym für eine lange Irrfahrt geworden.",
     "isbn": "3-7608-1542-1",
     "genre": [
       1
@@ -273,7 +273,7 @@
   "fields": {
     "title": "Parzival",
     "author": 2,
-    "summary": "Parzival von Wolfram von Eschenbach ist ein Versroman der mittelhochdeutschen höfischen Literatur, der zwischen 1200 und 1210 entstand[1]. Das Werk umfasst etwa 25.000 paarweise gereimte Verse und wird in den modernen Ausgaben in 16 Bücher gegliedert.\r\n\r\nIn kunstvoll verzahnten Handlungssträngen einer Doppelromanstruktur werden die Aventiuren erzählt, die abenteuerlichen Geschicke zweier ritterlicher Hauptfiguren – einerseits die Entwicklung des Titelhelden Parzival (von altfranzösisch Perceval) vom Unwissenden im Narrenkleid zum Gralskönig, andererseits die gefahrvollen Bewährungsproben für den Artusritter Gawain.\r\n\r\nThematisch gehört der Roman zur sogenannten Artusepik, wobei die Aufnahme Parzivals in die Tafelrunde des mythischen britannischen Königs nur als Durchgangsstation der Gralssuche erscheint, doch dann zur Voraussetzung seiner Bestimmung als Gralskönig wird.",
+    "summary": "Parzival von Wolfram von Eschenbach ist ein Versroman der mittelhochdeutschen hoefischen Literatur, der zwischen 1200 und 1210 entstand[1]. Das Werk umfasst etwa 25.000 paarweise gereimte Verse und wird in den modernen Ausgaben in 16 Bücher gegliedert.\r\n\r\nIn kunstvoll verzahnten Handlungssträngen einer Doppelromanstruktur werden die Aventiuren erzählt, die abenteuerlichen Geschicke zweier ritterlicher Hauptfiguren – einerseits die Entwicklung des Titelhelden Parzival (von altfranzoesisch Perceval) vom Unwissenden im Narrenkleid zum Gralskoenig, andererseits die gefahrvollen Bewährungsproben für den Artusritter Gawain.\r\n\r\nThematisch gehoert der Roman zur sogenannten Artusepik, wobei die Aufnahme Parzivals in die Tafelrunde des mythischen britannischen Koenigs nur als Durchgangsstation der Gralssuche erscheint, doch dann zur Voraussetzung seiner Bestimmung als Gralskoenig wird.",
     "isbn": "ISBN 3-596-13",
     "genre": [
       1
@@ -297,9 +297,9 @@
   "model": "catalog.book",
   "pk": 4,
   "fields": {
-    "title": "Die Göttliche Komödie",
+    "title": "Die Goettliche Komoedie",
     "author": 4,
-    "summary": "Die Göttliche Komödie, italienisch ursprünglich Comedia oder Commedia (‚Komödie‘), in späterer Zeit auch Divina Commedia genannt, ist das Hauptwerk des italienischen Dichters Dante Alighieri (1265–1321). Sie entstand während der Jahre seines Exils und wurde wahrscheinlich um 1307 begonnen und erst kurze Zeit vor seinem Tod vollendet (1321). Die in Hölle, Fegefeuer und Paradies aufgeteilte Divina Commedia gilt als bedeutendste Dichtung der italienischen Literatur und hat gleichzeitig die italienische Sprache als Schriftsprache erst begründet. Zudem wird sie als eines der größten Werke der Weltliteratur angesehen.",
+    "summary": "Die Goettliche Komoedie, italienisch ursprünglich Comedia oder Commedia (‚Komoedie‘), in späterer Zeit auch Divina Commedia genannt, ist das Hauptwerk des italienischen Dichters Dante Alighieri (1265–1321). Sie entstand während der Jahre seines Exils und wurde wahrscheinlich um 1307 begonnen und erst kurze Zeit vor seinem Tod vollendet (1321). Die in Hoelle, Fegefeuer und Paradies aufgeteilte Divina Commedia gilt als bedeutendste Dichtung der italienischen Literatur und hat gleichzeitig die italienische Sprache als Schriftsprache erst begründet. Zudem wird sie als eines der groeßten Werke der Weltliteratur angesehen.",
     "isbn": "978-3-465-025",
     "genre": [
       3
@@ -312,7 +312,7 @@
   "fields": {
     "title": "Die Leiden des jungen Werthers",
     "author": 5,
-    "summary": "Die Leiden des jungen Werthers lautet der ursprüngliche Titel des von Johann Wolfgang Goethe verfassten Briefromans, in dem der junge Rechtspraktikant Werther bis zu seinem Suizid über seine unglückliche Liebesbeziehung zu der mit einem anderen Mann verlobten Lotte berichtet. Er wurde 1774 veröffentlicht und war nach dem nationalen Erfolg des Dramas Götz von Berlichingen (1773) Goethes zweiter großer, jetzt sogar europäischer Erfolg. Beide Werke sind der literarischen Strömung des Sturm und Drang zuzuordnen.",
+    "summary": "Die Leiden des jungen Werthers lautet der ursprüngliche Titel des von Johann Wolfgang Goethe verfassten Briefromans, in dem der junge Rechtspraktikant Werther bis zu seinem Suizid über seine unglückliche Liebesbeziehung zu der mit einem anderen Mann verlobten Lotte berichtet. Er wurde 1774 veroeffentlicht und war nach dem nationalen Erfolg des Dramas Goetz von Berlichingen (1773) Goethes zweiter großer, jetzt sogar europäischer Erfolg. Beide Werke sind der literarischen Stroemung des Sturm und Drang zuzuordnen.",
     "isbn": "978-3-88377-9",
     "genre": [
       4
@@ -325,7 +325,7 @@
   "fields": {
     "title": "Faust",
     "author": 5,
-    "summary": "aust. Eine Tragödie. (auch Faust. Der Tragödie erster Teil oder kurz Faust I) von Johann Wolfgang von Goethe gilt als das bedeutendste und meistzitierte Werk der deutschen Literatur. Die 1808 veröffentlichte Tragödie greift die Geschichte des historischen Doktor Faustus auf und wird in Faust II zu einer Menschheitsparabel ausgeweitet.",
+    "summary": "aust. Eine Tragoedie. (auch Faust. Der Tragoedie erster Teil oder kurz Faust I) von Johann Wolfgang von Goethe gilt als das bedeutendste und meistzitierte Werk der deutschen Literatur. Die 1808 veroeffentlichte Tragoedie greift die Geschichte des historischen Doktor Faustus auf und wird in Faust II zu einer Menschheitsparabel ausgeweitet.",
     "isbn": "3-7608-1542-1",
     "genre": [
       5
@@ -351,7 +351,7 @@
   "fields": {
     "title": "Das Decamerone",
     "author": 6,
-    "summary": "Sammlung von 100 Novellen von Giovanni Boccaccio. Die Rahmenhandlung verlegt Boccaccio in ein Landhaus in den Hügeln von Florenz (im Vorort Fiesole), drei Kilometer vom damaligen Stadtkern von Florenz entfernt. In dieses Landhaus sind sieben Frauen und drei junge Männer vor der Pest (Schwarzer Tod) geflüchtet, die im Frühjahr und Sommer des Jahres 1348 Florenz heimsuchte. Im Landhaus versuchen sich die Flüchtlinge gegenseitig zu unterhalten. Daher wird jeden Tag eine Königin oder ein König bestimmt, welcher einen Themenkreis vorgibt. Zu diesem Themenkreis hat sich nun jeder der Anwesenden eine Geschichte auszudenken und zum Besten zu geben. Nach zehn Tagen und zehn mal zehn Novellen kehrt die Gruppe",
+    "summary": "Sammlung von 100 Novellen von Giovanni Boccaccio. Die Rahmenhandlung verlegt Boccaccio in ein Landhaus in den Hügeln von Florenz (im Vorort Fiesole), drei Kilometer vom damaligen Stadtkern von Florenz entfernt. In dieses Landhaus sind sieben Frauen und drei junge Männer vor der Pest (Schwarzer Tod) geflüchtet, die im Frühjahr und Sommer des Jahres 1348 Florenz heimsuchte. Im Landhaus versuchen sich die Flüchtlinge gegenseitig zu unterhalten. Daher wird jeden Tag eine Koenigin oder ein Koenig bestimmt, welcher einen Themenkreis vorgibt. Zu diesem Themenkreis hat sich nun jeder der Anwesenden eine Geschichte auszudenken und zum Besten zu geben. Nach zehn Tagen und zehn mal zehn Novellen kehrt die Gruppe",
     "isbn": "978-3-596-900",
     "genre": [
       6
@@ -364,7 +364,7 @@
   "fields": {
     "title": "Candide",
     "author": 7,
-    "summary": "Satirische Novelle des französischen Philosophen Voltaire. Im Jahr 1776 erschien eine deutsche Übersetzung unter dem Titel Candide oder die beste aller Welten. Diese Satire wendet sich unter anderem gegen die optimistische Weltanschauung Gottfried Wilhelm Leibniz’, der die beste aller möglichen Welten postulierte. Voltaire propagiert Skeptizismus und Pessimismus, die Leibniz’ Postulat in den Kontext der Zeit rücken (Eindruck des Erdbebens von Lissabon 1755, Siebenjähriger Krieg) und in Frage stellen. Mit Witz und Ironie prangert Voltaire in seinem „conte philosophique“ den überheblichen Adel, die kirchliche Inquisition, Krieg und Sklaverei an und verspottet die naive Utopie des einfachen Mannes von einem sorglosen Leben.",
+    "summary": "Satirische Novelle des franzoesischen Philosophen Voltaire. Im Jahr 1776 erschien eine deutsche Übersetzung unter dem Titel Candide oder die beste aller Welten. Diese Satire wendet sich unter anderem gegen die optimistische Weltanschauung Gottfried Wilhelm Leibniz’, der die beste aller moeglichen Welten postulierte. Voltaire propagiert Skeptizismus und Pessimismus, die Leibniz’ Postulat in den Kontext der Zeit rücken (Eindruck des Erdbebens von Lissabon 1755, Siebenjähriger Krieg) und in Frage stellen. Mit Witz und Ironie prangert Voltaire in seinem „conte philosophique“ den überheblichen Adel, die kirchliche Inquisition, Krieg und Sklaverei an und verspottet die naive Utopie des einfachen Mannes von einem sorglosen Leben.",
     "isbn": "3-15-006549-6",
     "genre": [
       7
@@ -377,7 +377,7 @@
   "fields": {
     "title": "Die Bekenntnisse",
     "author": 8,
-    "summary": "Ab 1763 verfasste Rousseau eine ganze Reihe kürzerer und längerer autobiografischer Texte, darunter seine 1765–1770 geschriebenen, später berühmt gewordenen Confessions (Die Bekenntnisse), die erst posthum publiziert wurden. Darin schildert er auch intime Details aus seinem Leben sowie eigene Verfehlungen. Vor allem diese Schrift begründete die Untergattung der „selbstentblössenden“ Autobiografie. Den Titel wählte er in Anlehnung an den der Confessiones des Augustinus von Hippo.",
+    "summary": "Ab 1763 verfasste Rousseau eine ganze Reihe kürzerer und längerer autobiografischer Texte, darunter seine 1765–1770 geschriebenen, später berühmt gewordenen Confessions (Die Bekenntnisse), die erst posthum publiziert wurden. Darin schildert er auch intime Details aus seinem Leben sowie eigene Verfehlungen. Vor allem diese Schrift begründete die Untergattung der „selbstentbloessenden“ Autobiografie. Den Titel wählte er in Anlehnung an den der Confessiones des Augustinus von Hippo.",
     "isbn": "3-7608-1542-1",
     "genre": [
       8
@@ -390,7 +390,7 @@
   "fields": {
     "title": "Zum ewigen Frieden",
     "author": 9,
-    "summary": "Ein philosophischer Entwurf (erste Auflage 1795 (zit. als A) 104 S., zweite, erweiterte Auflage 1796 (zit. als B), 112 S.) gehört zu den bekanntesten Werken des deutschen Philosophen Immanuel Kant. Moderne Bedeutungen des Begriffs Frieden gehen entscheidend auf die hier vorgestellte Theorie zurück.\r\n\r\nIn Form eines Friedensvertrages wendet Kant seine Moralphilosophie (vgl. Grundlegung zur Metaphysik der Sitten, Kategorischer Imperativ) auf die Politik an, um die Frage zu beantworten, ob und wie dauerhafter Frieden zwischen den Staaten möglich wäre. \r\n\r\nBekannt geworden sind die Ideen des Völkerrechts, das die Verbindlichkeit der zwischenstaatlichen Abkommen fordert, und die Ausrichtung des Friedens als völkerrechtlichen Vertrag. In den Internationalen Beziehungen wird „Zum ewigen Frieden“ den liberalen Theorien zugeordnet. Die Charta der Vereinten Nationen wurde wesentlich von dieser Schrift beeinflusst.",
+    "summary": "Ein philosophischer Entwurf (erste Auflage 1795 (zit. als A) 104 S., zweite, erweiterte Auflage 1796 (zit. als B), 112 S.) gehoert zu den bekanntesten Werken des deutschen Philosophen Immanuel Kant. Moderne Bedeutungen des Begriffs Frieden gehen entscheidend auf die hier vorgestellte Theorie zurück.\r\n\r\nIn Form eines Friedensvertrages wendet Kant seine Moralphilosophie (vgl. Grundlegung zur Metaphysik der Sitten, Kategorischer Imperativ) auf die Politik an, um die Frage zu beantworten, ob und wie dauerhafter Frieden zwischen den Staaten moeglich wäre. \r\n\r\nBekannt geworden sind die Ideen des Voelkerrechts, das die Verbindlichkeit der zwischenstaatlichen Abkommen fordert, und die Ausrichtung des Friedens als voelkerrechtlichen Vertrag. In den Internationalen Beziehungen wird „Zum ewigen Frieden“ den liberalen Theorien zugeordnet. Die Charta der Vereinten Nationen wurde wesentlich von dieser Schrift beeinflusst.",
     "isbn": "978-3-596-900",
     "genre": [
       9
@@ -429,7 +429,7 @@
   "fields": {
     "title": "Das Jahr des Hasen",
     "author": 10,
-    "summary": "Liebevoll-skurriler Roadtrip durch die finnische Wildnis Seine Arbeit ödet ihn an, seine Ehe ist schon seit Jahren eine Qual - der Journalist Vatanen schleppt sich von einem Tag zum nächsten. Bis ihm auf der Heimfahrt von einem seiner üblichen langweiligen Pressetermine ein junger Hase vors Auto hoppelt ... und Vatanens ehemals so hübsch geordnetes Leben zum Abenteuer wird, das ihn quer durch Finnland führt. Ein wunderbar erzählter Roman, todernst und urkomisch zugleich - von Arto Paasilinna, dem vielfach ausgezeichneten Meister des skurrilen Humors",
+    "summary": "Liebevoll-skurriler Roadtrip durch die finnische Wildnis Seine Arbeit oedet ihn an, seine Ehe ist schon seit Jahren eine Qual - der Journalist Vatanen schleppt sich von einem Tag zum nächsten. Bis ihm auf der Heimfahrt von einem seiner üblichen langweiligen Pressetermine ein junger Hase vors Auto hoppelt ... und Vatanens ehemals so hübsch geordnetes Leben zum Abenteuer wird, das ihn quer durch Finnland führt. Ein wunderbar erzählter Roman, todernst und urkomisch zugleich - von Arto Paasilinna, dem vielfach ausgezeichneten Meister des skurrilen Humors",
     "isbn": "3-929029-13-8",
     "genre": [
       3,
